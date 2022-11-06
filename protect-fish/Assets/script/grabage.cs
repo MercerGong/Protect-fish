@@ -2,38 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class netup : MonoBehaviour
+public class grabage : MonoBehaviour
 {
-    public float speed=0.3f;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        float y = transform.position.y;
-        Vector3 movement = new Vector3(0, y, 0);
-        transform.Translate(movement * speed * Time.deltaTime);
-
-        if (transform.position.y > 5)
+        if (gameObject.transform.position.y < -10)
         {
             Destroy(gameObject);
-
         }
     }
 
 
     void OnCollisionEnter(Collision collision)
     {
-    
+       
 
         if (collision.gameObject.tag == ("Player"))
         {
+            Debug.Log("destory");
             Destroy(gameObject);
         }
-        
+
     }
 }

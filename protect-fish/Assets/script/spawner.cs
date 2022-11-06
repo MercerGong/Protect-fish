@@ -20,8 +20,8 @@ public class spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(tras.position.x);
-        tras2 = new Vector3(tras.position.x, 4.5f, -2f);
+        
+        tras2 = new Vector3(tras.position.x, 4.5f, 0f);
         _interval_for_net = Random.Range(time_range_net.x, time_range_net.y);
         _interval_for_Garbage = Random.Range(time_range_garbage.x, time_range_garbage.y);
 

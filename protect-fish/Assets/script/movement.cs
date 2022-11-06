@@ -40,7 +40,7 @@ public class movement : MonoBehaviour
                 }else{
                     transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, transform.position.z));
                 }
-                Debug.Log("Text: " + transform.position.x + ", " + cam.ScreenToWorldPoint(mousePos).x);
+                //Debug.Log("Text: " + transform.position.x + ", " + cam.ScreenToWorldPoint(mousePos).x);
             }
         }
     }
