@@ -6,21 +6,22 @@ public class spawner : MonoBehaviour
 {
     public Vector2 time_range_net;
     public Vector2 time_range_garbage;
-
+    public Transform tras;
     float _interval_for_net = 3f;
     float _interval_for_Garbage = 1f;
-
+    private Vector3 tras2;
     float _time_net;
     float _time_garbage;
     public GameObject net;
     public GameObject garbage;
-    public Transform SpawnPoint;
     private int TimebetweenNet=3;
     private int TimebetweenGarbage=3;
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(tras.position.x);
+        tras2 = new Vector3(tras.position.x, 4.5f, -2f);
         _interval_for_net = Random.Range(time_range_net.x, time_range_net.y);
         _interval_for_Garbage = Random.Range(time_range_garbage.x, time_range_garbage.y);
 
@@ -36,7 +37,7 @@ public class spawner : MonoBehaviour
             spawnerGarbage();
             _time_garbage -= _interval_for_Garbage;
         }
-
+      
 
     }
 
@@ -54,7 +55,7 @@ public class spawner : MonoBehaviour
     public IEnumerator SpawnerNetDelay()
     { 
             yield return new WaitForSeconds(TimebetweenNet);
-        var SpawnedNet = Instantiate(net, SpawnPoint.position, Quaternion.identity);
+        var SpawnedNet = Instantiate(net, tras2, Quaternion.identity);
     
 
     }
@@ -62,7 +63,7 @@ public class spawner : MonoBehaviour
     {
        
         yield return new WaitForSeconds(TimebetweenGarbage);
-        var SpawnedGarbage = Instantiate(garbage, SpawnPoint.position, Quaternion.identity);
+        var SpawnedGarbage = Instantiate(garbage, tras2, Quaternion.identity);
 
     }
 }

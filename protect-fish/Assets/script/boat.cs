@@ -18,10 +18,20 @@ public class boat : MonoBehaviour
 
         if (gameObject.transform.position.x > 5)
         {
-            back = true;
+            gameObject.transform.eulerAngles = new Vector3(
+gameObject.transform.eulerAngles.x,
+gameObject.transform.eulerAngles.y + 180,
+gameObject.transform.eulerAngles.z);
+
+back = true;
         }
         else if (gameObject.transform.position.x < -5)
         {
+            gameObject.transform.eulerAngles = new Vector3(
+     gameObject.transform.eulerAngles.x,
+     gameObject.transform.eulerAngles.y + 180,
+     gameObject.transform.eulerAngles.z
+ );
             back = false;
         }
 

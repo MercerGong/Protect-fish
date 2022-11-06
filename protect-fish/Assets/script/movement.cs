@@ -32,7 +32,15 @@ public class movement : MonoBehaviour
         if(Physics.Raycast(ray, out hit)){
             if(hit.collider == planeCollider){
                 transform.position = Vector3.MoveTowards(transform.position, hit.point, Time.deltaTime*speed);
+                var mousePos = Input.mousePosition;
+                mousePos.z = 10;
                 //transform.LookAt(new Vector3(hit.point.x, tranform.position.y, hit.point.z));
+                if(cam.ScreenToWorldPoint(mousePos).x < transform.position.x){
+                    transform.rotation = Quaternion.Euler(new Vector3(0.0f, 180.0f, transform.position.z));
+                }else{
+                    transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, transform.position.z));
+                }
+                Debug.Log("Text: " + transform.position.x + ", " + cam.ScreenToWorldPoint(mousePos).x);
             }
         }
     }
