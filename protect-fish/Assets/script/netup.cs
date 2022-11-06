@@ -32,6 +32,7 @@ public class netup : MonoBehaviour
 
         if (collision.gameObject.tag == ("Player"))
         {
+            Debug.Log("destory");
             Destroy(gameObject);
         }
         

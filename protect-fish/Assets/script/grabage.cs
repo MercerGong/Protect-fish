@@ -5,6 +5,7 @@ using UnityEngine;
 public class grabage : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject player;
     void Start()
     {
         
@@ -26,6 +27,7 @@ public class grabage : MonoBehaviour
 
         if (collision.gameObject.tag == ("Player"))
         {
+            player.GetComponent<playerHealth>().Health -= 1;
             Debug.Log("destory");
             Destroy(gameObject);
         }
