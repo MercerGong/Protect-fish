@@ -1910,12 +1910,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &1816209900
 GameObject:
+=======
+<<<<<<< HEAD
+--- !u!114 &1766958232
+MonoBehaviour:
+=======
+--- !u!1 &1816209900
+GameObject:
+>>>>>>> b1497268df99d0aaa8d748238994769dd5925a8e
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1816209903}
@@ -1937,6 +1948,37 @@ ParticleSystemRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816209900}
   m_Enabled: 1
+=======
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1766958228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44abcf7f7b3cac4d8388ad53026645d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+=======
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816209903}
+  - component: {fileID: 1816209902}
+  - component: {fileID: 1816209901}
+  m_Layer: 0
+  m_Name: bubble
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!199 &1816209901
+ParticleSystemRenderer:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816209900}
+  m_Enabled: 1
+>>>>>>> Stashed changes
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6722,6 +6764,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+>>>>>>> b1497268df99d0aaa8d748238994769dd5925a8e
+>>>>>>> Stashed changes
 --- !u!1 &2036230375
 GameObject:
   m_ObjectHideFlags: 0
