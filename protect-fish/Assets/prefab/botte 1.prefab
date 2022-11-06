@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6490267343499070148}
   - component: {fileID: 6490267343499070149}
   m_Layer: 0
-  m_Name: botte
+  m_Name: botte 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6256456537023979045}
-  m_Mesh: {fileID: -3685121764038776232, guid: cd16645c275c5ca45986bf04ff1c8e1b, type: 3}
+  m_Mesh: {fileID: 7224224870445939155, guid: 26a97e1e578d35d4eac732dfe3d644c2, type: 3}
 --- !u!23 &5607995709779591152
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,10 +64,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8705533452240791338, guid: cd16645c275c5ca45986bf04ff1c8e1b, type: 3}
-  - {fileID: -2806404139380182949, guid: cd16645c275c5ca45986bf04ff1c8e1b, type: 3}
-  - {fileID: -8274133419916619345, guid: cd16645c275c5ca45986bf04ff1c8e1b, type: 3}
-  - {fileID: -2813467912831258332, guid: cd16645c275c5ca45986bf04ff1c8e1b, type: 3}
+  - {fileID: 830258910468995235, guid: 26a97e1e578d35d4eac732dfe3d644c2, type: 3}
+  - {fileID: -4372536172839912495, guid: 26a97e1e578d35d4eac732dfe3d644c2, type: 3}
+  - {fileID: 8255028161511215929, guid: 26a97e1e578d35d4eac732dfe3d644c2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

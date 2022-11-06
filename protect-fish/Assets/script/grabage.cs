@@ -6,6 +6,7 @@ public class grabage : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject player;
+    public CameraShake cameraShake;
     void Start()
     {
         
@@ -29,6 +30,7 @@ public class grabage : MonoBehaviour
         {
             player.GetComponent<playerHealth>().Health -= 1;
             Debug.Log("destory");
+            StartCoroutine(cameraShake.Shake(.15f, .3f));
             Destroy(gameObject);
         }
 

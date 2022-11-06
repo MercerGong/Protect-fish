@@ -14,6 +14,9 @@ public class spawner : MonoBehaviour
     float _time_garbage;
     public GameObject net;
     public GameObject garbage;
+    public GameObject garbage1;
+    public GameObject garbage2;
+    public CameraShake cameraShake;
     private int TimebetweenNet=3;
     private int TimebetweenGarbage=3;
 
@@ -63,7 +66,25 @@ public class spawner : MonoBehaviour
     {
        
         yield return new WaitForSeconds(TimebetweenGarbage);
-        var SpawnedGarbage = Instantiate(garbage, tras2, Quaternion.identity);
+        int rando = Random.Range(0, 3);
+        if(rando == 0){
+            var SpawnedGarbage = Instantiate(garbage, tras2, Quaternion.identity);
+            var thisgarbage = SpawnedGarbage.GetComponent<grabage>();
+            //thisgarbage.player = gameObject;
+            thisgarbage.cameraShake = cameraShake;
+        }else if(rando == 1){
+            var SpawnedGarbage = Instantiate(garbage1, tras2, Quaternion.identity);
+            var thisgarbage = SpawnedGarbage.GetComponent<grabage>();
+            //thisgarbage.player = gameObject;
+            thisgarbage.cameraShake = cameraShake;
+        }else{
+            var SpawnedGarbage = Instantiate(garbage2, tras2, Quaternion.identity);
+            var thisgarbage = SpawnedGarbage.GetComponent<grabage>();
+            //thisgarbage.player = gameObject;
+            thisgarbage.cameraShake = cameraShake;
+        }
+        
+        
 
     }
 }
